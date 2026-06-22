@@ -243,6 +243,4 @@ public class RegisterSteps {
         Assert.assertTrue(myAccountHeading.isDisplayed());
     }
 
-
-
 }

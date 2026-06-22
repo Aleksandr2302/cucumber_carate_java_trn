@@ -16,5 +16,6 @@ public class RegistrationPage {
     public By emailField = By.cssSelector("[data-test='email']");
     public By passwordField = By.cssSelector("[data-test='password']");
     public By registerBtn = By.cssSelector("[data-test='register-submit']");
+
     public By loginBtn = By.cssSelector("[data-test='login-submit']");
 }
