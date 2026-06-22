@@ -31,6 +31,11 @@ public class Hooks {
         prefs.put("profile.password_manager_enabled", false);
         prefs.put("autofill.profile_enabled", false);
 
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--window-size=1920,1080");
+
         options.setExperimentalOption("prefs", prefs);
 
         context.driver = new ChromeDriver(options);
@@ -40,13 +45,13 @@ public class Hooks {
     @After
     public void teardown(Scenario scenario) {
 
-        if (scenario.isFailed()) {
-
-            byte[] screenshot = ((TakesScreenshot) context.driver)
-                    .getScreenshotAs(OutputType.BYTES);
-
-            scenario.attach(screenshot, "image/png", "failed screenshot");
-        }
+//        if (scenario.isFailed()) {
+//
+//            byte[] screenshot = ((TakesScreenshot) context.driver)
+//                    .getScreenshotAs(OutputType.BYTES);
+//
+//            scenario.attach(screenshot, "image/png", "failed screenshot");
+//        }
 
         if (context.driver != null) {
             context.driver.quit();
