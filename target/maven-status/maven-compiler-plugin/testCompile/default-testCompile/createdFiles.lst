@@ -1,0 +1,6 @@
+steps\LoginSteps.class
+pages\RegistrationPage.class
+runners\TestRunner.class
+hooks\Hooks.class
+context\TestContext.class
+steps\RegisterSteps.class
