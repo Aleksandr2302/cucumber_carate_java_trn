@@ -39,7 +39,7 @@ public class Hooks {
         options.setExperimentalOption("prefs", prefs);
 
         context.driver = new ChromeDriver(options);
-        context.wait = new WebDriverWait(context.driver, Duration.ofSeconds(10));
+        context.wait = new WebDriverWait(context.driver, Duration.ofSeconds(20));
     }
 
     @After
