@@ -28,4 +28,4 @@ jobs:
           restore-keys: maven-
 
       - name: Run tests
-        run: mvn test
+        run: mvn clean test
