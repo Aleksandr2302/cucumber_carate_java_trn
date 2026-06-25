@@ -1,6 +1,7 @@
 steps\LoginSteps.class
-pages\RegistrationPage.class
+karate\KarateTest.class
 runners\TestRunner.class
-hooks\Hooks.class
 context\TestContext.class
+pages\RegistrationPage.class
+hooks\Hooks.class
 steps\RegisterSteps.class
