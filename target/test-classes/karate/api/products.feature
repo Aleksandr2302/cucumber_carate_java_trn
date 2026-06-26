@@ -6,20 +6,7 @@ Background:
     * def result = call read('classpath:features/api/login.feature')
     * def token = result.token
 
-    * def body =
-    """
-    {
-                   "name": "new_product1",
-                   "description": "descOfNewProduct1",
-                   "price": 1.99,
-                   "category_id": "01JFG8Q5XKZJY4BEYQ87PC2Q1Y",
-                   "brand_id": "01JFG8Q5XKZJY4BEYQ87PC2Q1Y",
-                   "product_image_id": "01JFG8Q5XKZJY4BEYQ87PC2Q1Y",
-                   "is_location_offer": 1,
-                   "is_rental": 0,
-                   "co2_rating": "A"
-                 }
-"""
+    * def body = read('classpath:karate/payloads/product/product.json')
 
 Scenario: Get products
 

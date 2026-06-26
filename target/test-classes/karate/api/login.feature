@@ -1,13 +1,19 @@
 Feature: Auth helper
 
+Background:
+    * def registerResult = call read('classpath:karate/api/register.feature@createUser')
+    * def email = registerResult.randomEmail1
+    * def password = registerResult.randomPassword1
+
+@login
 Scenario: Get token
 
     Given url 'https://api.practicesoftwaretesting.com/users/login'
     And request
     """
     {
-      "email": "customer@practicesoftwaretesting.com",
-      "password": "welcome01"
+      "email": #(email),
+      "password": #(password)
     }
     """
     When method POST
