@@ -1,0 +1,16 @@
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "address": {
+    "street": "Street 1",
+    "house_number": "12",
+    "city": "City",
+    "state": "State",
+    "country": "Country",
+    "postal_code": "1234AA"
+  },
+  "phone": "0447654321",
+  "dob": "1970-01-01",
+  "password": "#(randomPassword1)",
+  "email": "#(randomEmail1)"
+}
