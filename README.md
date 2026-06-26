@@ -1,3 +1,5 @@
+[![Run Maven Tests](https://github.com/Aleksandr2302/cucumber_carate_java_trn/actions/workflows/maven-tests.yml/badge.svg)](https://github.com/Aleksandr2302/cucumber_carate_java_trn/actions/workflows/maven-tests.yml)
+
 # UI Automation Framework
 
 This project is a UI test automation framework built with:
